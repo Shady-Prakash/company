@@ -11,35 +11,27 @@ $font-extra-bold: 800;
 $font-black: 900;
 
 /* 2.1 Font Size*/
-$text-xl: 20px !default;
-$text-lg: 18px !default;
-$text-md: 14px !default;
-$text-sm: 12px !default;
-$text-xs: 10px;
+$p1: 18px !default;
+$p2: 14px !default;
+$b1: 18px !default;
 
 /* 3.0 Heading Size*/
-$h1: 24px !default;
-$h2: 22px !default;
-// $h3: rem(27.65px) !default;
-// $h4: $large;
-// $h5: $medium;
-// $h6: $base;
-
-$radius-buttons: 4px;
-$radius: 8px;
-$shadow: 2px 2px 6px #2eb2ff44;
-$border: 1px solid rgb(230, 230, 230);
+$h1: 64px !default;
+$h2: 44px !default;
+$h3: 32px !default;
+$h4: 24px !default;
+$h5: 24px !default;
+$h6: 14px !default;
 
 // color variable map
 $colors: (
 	// non-nested values
-	text-dark: #333333,
-	text-light: #555353,
 	background: #f8f8f8,
 	// nested map inception
 	primary:
 		(
 			base: #003a92,
+			light: #000000,
 		),
 	secondary: (
 		base: #8c2531,
