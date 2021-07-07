@@ -1,0 +1,64 @@
+/** @format */
+/* 2.3 Font weight*/
+$font-extrathin: 100;
+$font-thin: 200;
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-semi-bold: 600;
+$font-bold: 700;
+$font-extra-bold: 800;
+$font-black: 900;
+
+/* 2.1 Font Size*/
+$text-xl: 20px !default;
+$text-lg: 18px !default;
+$text-md: 14px !default;
+$text-sm: 12px !default;
+$text-xs: 10px;
+
+/* 3.0 Heading Size*/
+$h1: 24px !default;
+$h2: 22px !default;
+// $h3: rem(27.65px) !default;
+// $h4: $large;
+// $h5: $medium;
+// $h6: $base;
+
+$radius-buttons: 4px;
+$radius: 8px;
+$shadow: 2px 2px 6px #2eb2ff44;
+$border: 1px solid rgb(230, 230, 230);
+
+// color variable map
+$colors: (
+	// non-nested values
+	text-dark: #333333,
+	text-light: #555353,
+	background: #f8f8f8,
+	// nested map inception
+	primary:
+		(
+			base: #003a92,
+		),
+	secondary: (
+		base: #8c2531,
+		light: #d7c3ae,
+	),
+	gray: (
+		base: #3c3c3c,
+		light: #74788a,
+	),
+	white: #ffffff
+);
+
+// retrieve color from $colors map ie. `color(base, primary)`
+@function color($color-name, $color-variant: null) {
+	// color variant is optional
+	@if ($color-variant != null) {
+		// map inception
+		@return map-get(map-get($colors, $color-name), $color-variant);
+	} @else {
+		@return map-get($colors, $color-name);
+	}
+}
