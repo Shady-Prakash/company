@@ -17,6 +17,27 @@ h1,
 h2,
 h3,
 h4,
+p,
+img,
+figure,
+figcaption,
+video,
+iframe,
+nav,
+ul,
+li,
+header,
+footer,
+article,
+main,
+aside {
+	margin: 0;
+	padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
 h5,
 h6 {
 	font-weight: $font-semi-bold;
@@ -71,7 +92,23 @@ input {
 	}
 }
 
-a {
+a,
+ul > li > a {
 	text-decoration: none;
+	color: unset;
+}
+a:hover,
+a:focus,
+a:active {
 	color: none;
+}
+img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+ul {
+	list-style: none;
+}
+ul li {
+	display: inline-block;
 }

@@ -10750,6 +10750,7 @@ textarea.form-control-lg {
 }
 /** @format */
 /** @format */
+/** @format */
 /* 2.3 Font weight*/
 /* 2.1 Font Size*/
 /* 3.0 Heading Size*/
@@ -10812,6 +10813,31 @@ body {
   font-weight: 400;
   background: #f2efee;
   font-family: "Galaxia";
+}
+
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+p,
+img,
+figure,
+figcaption,
+video,
+iframe,
+nav,
+ul,
+li,
+header,
+footer,
+article,
+main,
+aside {
+  margin: 0;
+  padding: 0;
 }
 
 h1, .h1,
@@ -10885,9 +10911,57 @@ input:focus {
   -webkit-box-shadow: none;
 }
 
-a {
+a,
+ul > li > a {
   text-decoration: none;
+  color: unset;
+}
+
+a:hover,
+a:focus,
+a:active {
   color: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+}
+
+/** @format */
+.social__icons {
+  padding: 1.25rem 0;
+}
+.social__icons ul {
+  float: right;
+}
+.social__icons ul li:not(:last-child) {
+  margin-right: 1.875rem;
+}
+.social__icons ul li a img {
+  max-width: 1rem;
+}
+
+/** @format */
+header {
+  background-color: #ffffff;
+  padding: 4.1875rem 2.1875rem;
+}
+header .header__mast nav ul li:not(:last-child) {
+  margin-right: 60px;
+}
+header .header__mast nav ul li a {
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Inter";
 }
 
 /*# sourceMappingURL=App.css.map */

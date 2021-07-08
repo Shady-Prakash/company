@@ -1,0 +1,18 @@
+/** @format */
+
+.social__icons {
+	padding: rem(20px) 0;
+	& ul {
+		float: right;
+		& li:not(:last-child) {
+			margin-right: rem(30px);
+		}
+		& li {
+			& a {
+				& img {
+					max-width: rem(16px);
+				}
+			}
+		}
+	}
+}

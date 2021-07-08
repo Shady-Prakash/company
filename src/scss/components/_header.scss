@@ -1,0 +1,21 @@
+/** @format */
+header {
+	background-color: color(white);
+	padding: rem(67px) rem(35px);
+	.header__mast {
+		& nav {
+			& ul {
+				& li:not(:last-child) {
+					margin-right: 60px;
+				}
+				& li {
+					& a {
+						font-size: rem(14px);
+						font-weight: $font-regular;
+						font-family: 'Inter';
+					}
+				}
+			}
+		}
+	}
+}
