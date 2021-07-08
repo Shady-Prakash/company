@@ -1,8 +1,5 @@
 /** @format */
-// $font-path: '../assets/fonts/';
-// @font-face {
-// 	font-family: Font;
-// 	src: url('#{$font-path}/GalaxieCopernicusBook.otf') format('opentype');
-// }
+
 @import './config';
 @import './abstracts/index';
+@import './base/index';

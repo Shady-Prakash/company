@@ -1,0 +1,77 @@
+/** @format */
+
+svg:not(:root) {
+	overflow: unset;
+}
+html {
+	scroll-behavior: smooth;
+	text-rendering: optimizeLegibility;
+}
+body {
+	margin: 0;
+	font-weight: $font-regular;
+	background: color(background);
+	font-family: 'Galaxia';
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: $font-semi-bold;
+	margin-top: 0;
+	margin-bottom: 0.1rem;
+	color: rgb(66, 66, 66);
+	font-family: 'Galaxia';
+	line-height: 130%;
+}
+h1,
+h2,
+h3,
+h4 {
+	line-height: 1.2;
+	letter-spacing: -2%;
+	font-family: 'Galaxia';
+}
+h5,
+h6 {
+	line-height: 1;
+	letter-spacing: 5%;
+	font-family: 'Inter';
+	font-weight: $font-bold;
+}
+
+p {
+	line-height: 1.4;
+	font-family: 'Galaxia';
+	letter-spacing: -1%;
+}
+.text-sm {
+	font-size: $p1;
+	letter-spacing: 2%;
+	font-weight: $font-medium;
+}
+b {
+	line-height: 1;
+	letter-spacing: 2%;
+	font-weight: $font-bold;
+}
+.text-sm,
+b {
+	font-family: 'Inter';
+}
+button,
+textarea,
+input {
+	&:focus {
+		outline: none;
+		box-shadow: none;
+		-webkit-box-shadow: none;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: none;
+}

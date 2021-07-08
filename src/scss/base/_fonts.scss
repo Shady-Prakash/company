@@ -1,0 +1,10 @@
+/** @format */
+$font-path: '../../assets/fonts';
+@font-face {
+	font-family: 'Galaxia';
+	src: url('#{$font-path}/GalaxieCopernicus.otf') format('opentype');
+}
+@font-face {
+	font-family: 'Inter';
+	src: url('#{$font-path}/Inter.ttf') format('truetype');
+}

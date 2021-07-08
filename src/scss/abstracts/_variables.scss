@@ -1,32 +1,27 @@
 /** @format */
 /* 2.3 Font weight*/
-$font-extrathin: 100;
-$font-thin: 200;
-$font-light: 300;
 $font-regular: 400;
 $font-medium: 500;
 $font-semi-bold: 600;
 $font-bold: 700;
-$font-extra-bold: 800;
-$font-black: 900;
 
 /* 2.1 Font Size*/
-$p1: 18px !default;
-$p2: 14px !default;
-$b1: 18px !default;
+$p1: 0.875rem !default;
+$p2: 1.125rem !default;
+$b1: 0.875rem !default;
 
 /* 3.0 Heading Size*/
-$h1: 64px !default;
-$h2: 44px !default;
-$h3: 32px !default;
-$h4: 24px !default;
-$h5: 24px !default;
-$h6: 14px !default;
+$h1: 4rem !default;
+$h2: 2.75rem !default;
+$h3: 2rem !default;
+$h4: 1.5rem !default;
+$h5: 1.5rem !default;
+$h6: 0.875rem !default;
 
 // color variable map
 $colors: (
 	// non-nested values
-	background: #f8f8f8,
+	background: #f2efee,
 	// nested map inception
 	primary:
 		(
@@ -38,8 +33,8 @@ $colors: (
 		light: #d7c3ae,
 	),
 	gray: (
-		base: #3c3c3c,
-		light: #74788a,
+		one: #3c3c3c,
+		two: #74788a,
 	),
 	white: #ffffff
 );

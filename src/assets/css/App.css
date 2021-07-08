@@ -78,11 +78,11 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 h1, .h1 {
-  font-size: calc(1.525rem + 3.3vw);
+  font-size: calc(1.375rem + 1.5vw);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -7137,7 +7137,7 @@ textarea.form-control-lg {
 }
 
 .fs-1 {
-  font-size: calc(1.525rem + 3.3vw) !important;
+  font-size: calc(1.375rem + 1.5vw) !important;
 }
 
 .fs-2 {
@@ -10692,7 +10692,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) {
   .fs-1 {
-    font-size: 4rem !important;
+    font-size: 2.5rem !important;
   }
 
   .fs-2 {
@@ -10755,32 +10755,139 @@ textarea.form-control-lg {
 /* 3.0 Heading Size*/
 /** @format */
 /** @format */
-.text-bold {
-  font-weight: bold;
+h1, .h1 {
+  font-size: 4rem;
 }
 
-.h1 {
-  font-size: 64px;
+h2, .h2 {
+  font-size: 2.75rem;
 }
 
-.h2 {
-  font-size: 44px;
+h3, .h3 {
+  font-size: 2rem;
 }
 
-.h3 {
-  font-size: 32px;
+h4, .h4 {
+  font-size: 1.5rem;
 }
 
-.h4 {
-  font-size: 24px;
+h5, .h5 {
+  font-size: 1.5rem;
 }
 
-.h5 {
-  font-size: 24px;
+h6, .h6 {
+  font-size: 1.5rem;
 }
 
+p {
+  font-size: 1.125rem;
+}
+
+b {
+  font-size: 0.875rem;
+}
+
+/** @format */
+/** @format */
+@font-face {
+  font-family: "Galaxia";
+  src: url("../../assets/fonts/GalaxieCopernicus.otf") format("opentype");
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../assets/fonts/Inter.ttf") format("truetype");
+}
+/** @format */
+svg:not(:root) {
+  overflow: unset;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  font-weight: 400;
+  background: #f2efee;
+  font-family: "Galaxia";
+}
+
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
 .h6 {
-  font-size: 24px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0.1rem;
+  color: #424242;
+  font-family: "Galaxia";
+  line-height: 130%;
+}
+
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  line-height: 1.2;
+  letter-spacing: -2%;
+  font-family: "Galaxia";
+}
+
+h5, .h5,
+h6,
+.h6 {
+  line-height: 1;
+  letter-spacing: 5%;
+  font-family: "Inter";
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.4;
+  font-family: "Galaxia";
+  letter-spacing: -1%;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  letter-spacing: 2%;
+  font-weight: 500;
+}
+
+b {
+  line-height: 1;
+  letter-spacing: 2%;
+  font-weight: 700;
+}
+
+.text-sm,
+b {
+  font-family: "Inter";
+}
+
+button:focus,
+textarea:focus,
+input:focus {
+  outline: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+a {
+  text-decoration: none;
+  color: none;
 }
 
 /*# sourceMappingURL=App.css.map */
