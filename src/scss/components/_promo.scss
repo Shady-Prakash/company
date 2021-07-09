@@ -1,0 +1,16 @@
+/** @format */
+
+.promo {
+	padding: rem(40px) 0 rem(60px);
+	&__content {
+		&--display-text {
+			width: rem(885px);
+		}
+	}
+	&--img {
+		background: url('../../assets/uploads/Hero/Image.jpg');
+		min-height: 565px;
+		width: calc(100% - 120px);
+		margin: rem(80px) 0 0 auto;
+	}
+}

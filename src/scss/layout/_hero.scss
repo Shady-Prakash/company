@@ -1,0 +1,14 @@
+/** @format */
+.hero {
+	position: relative;
+
+	&:after {
+		position: absolute;
+		content: '';
+		width: 100%;
+		height: calc(100% - 359px);
+		background-color: color(white);
+		top: 0;
+		z-index: -1;
+	}
+}

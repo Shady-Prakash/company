@@ -1,0 +1,27 @@
+/** @format */
+
+.btn {
+	font-size: rem(18px);
+	font-weight: $font-bold;
+	letter-spacing: 2%;
+	font-family: 'Inter';
+
+	&__primary {
+		position: relative;
+		padding: rem(21px) rem(22px);
+		border: rem(1px) solid color(gray, three);
+
+		&:after {
+			position: absolute;
+			content: '';
+			right: 25%;
+			top: 0;
+			border-right: 1px solid color(gray, three);
+			height: 100%;
+		}
+	}
+	& img {
+		max-width: rem(9px);
+		margin-left: rem(54px);
+	}
+}

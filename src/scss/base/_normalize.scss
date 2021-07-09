@@ -40,7 +40,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: $font-semi-bold;
+	font-weight: $font-regular;
 	margin-top: 0;
 	margin-bottom: 0.1rem;
 	color: rgb(66, 66, 66);
@@ -52,13 +52,13 @@ h2,
 h3,
 h4 {
 	line-height: 1.2;
-	letter-spacing: -2%;
+	letter-spacing: -2px;
 	font-family: 'Galaxia';
 }
 h5,
 h6 {
 	line-height: 1;
-	letter-spacing: 5%;
+	letter-spacing: 5px;
 	font-family: 'Inter';
 	font-weight: $font-bold;
 }
@@ -66,21 +66,24 @@ h6 {
 p {
 	line-height: 1.4;
 	font-family: 'Galaxia';
-	letter-spacing: -1%;
+	letter-spacing: -1px;
 }
 .text-sm {
 	font-size: $p1;
-	letter-spacing: 2%;
+	letter-spacing: 2px;
 	font-weight: $font-medium;
 }
 b {
 	line-height: 1;
-	letter-spacing: 2%;
+	letter-spacing: 2px;
 	font-weight: $font-bold;
 }
 .text-sm,
 b {
 	font-family: 'Inter';
+}
+.color-brand {
+	color: color(primary, base);
 }
 button,
 textarea,
