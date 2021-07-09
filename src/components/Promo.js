@@ -15,7 +15,7 @@ const Promo = () => {
 						</h1>
 					</div>
 					<div className='cta align-self-end'>
-						<Button />
+						<Button type='btn__primary' text='Read more' />
 					</div>
 				</div>
 			</Container>

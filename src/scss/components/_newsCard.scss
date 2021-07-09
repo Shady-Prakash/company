@@ -1,0 +1,26 @@
+/** @format */
+
+.newsCard {
+	border: 1px solid color(white);
+	padding: rem(40px);
+	&__body {
+		& .meta {
+			padding: rem(20px) 0 rem(16px);
+			&__dash {
+				height: rem(1px);
+				width: rem(32px);
+				background-color: color(gray, three);
+			}
+		}
+	}
+	&__lg {
+		border-right: 0;
+		margin: rem(60px) 0 rem(40px);
+	}
+	&__sm {
+		border-top: 0;
+		&--bl-0 {
+			border-right: 0;
+		}
+	}
+}

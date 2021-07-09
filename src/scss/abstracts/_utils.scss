@@ -16,11 +16,18 @@ h5 {
 	font-size: $h5;
 }
 h6 {
-	font-size: $h5;
+	font-size: $h6;
 }
 p {
 	font-size: $p2;
 }
 b {
 	font-size: $b1;
+}
+
+.pl-0 {
+	padding-left: 0;
+}
+.pr-0 {
+	padding-right: 0;
 }

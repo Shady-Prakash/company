@@ -19,9 +19,17 @@
 			border-right: 1px solid color(gray, three);
 			height: 100%;
 		}
+		& img {
+			max-width: rem(9px);
+			margin-left: rem(54px);
+		}
 	}
-	& img {
-		max-width: rem(9px);
-		margin-left: rem(54px);
+	&__secondary {
+		padding: 0 0 rem(14px);
+		border-bottom: 1px solid color(gray, three);
+		& img {
+			max-width: rem(9px);
+			margin-left: rem(17px);
+		}
 	}
 }

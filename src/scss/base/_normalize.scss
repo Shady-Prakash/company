@@ -45,20 +45,19 @@ h6 {
 	margin-bottom: 0.1rem;
 	color: rgb(66, 66, 66);
 	font-family: 'Galaxia';
-	line-height: 130%;
 }
 h1,
 h2,
 h3,
 h4 {
 	line-height: 1.2;
-	letter-spacing: -2px;
+	letter-spacing: -0.02em;
 	font-family: 'Galaxia';
 }
 h5,
 h6 {
 	line-height: 1;
-	letter-spacing: 5px;
+	letter-spacing: 0.05em;
 	font-family: 'Inter';
 	font-weight: $font-bold;
 }
@@ -66,16 +65,16 @@ h6 {
 p {
 	line-height: 1.4;
 	font-family: 'Galaxia';
-	letter-spacing: -1px;
+	letter-spacing: -0.01em;
 }
 .text-sm {
 	font-size: $p1;
-	letter-spacing: 2px;
+	letter-spacing: 0.02em;
 	font-weight: $font-medium;
 }
 b {
 	line-height: 1;
-	letter-spacing: 2px;
+	letter-spacing: 0.02em;
 	font-weight: $font-bold;
 }
 .text-sm,
