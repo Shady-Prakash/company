@@ -8,6 +8,8 @@ import Hero from '../../components/Hero/Hero';
 import News from '../../components/News/News';
 import Mission from '../../components/Mission';
 import Beneficiaries from '../../components/Beneficiaries';
+import Founder from '../../components/Founder';
+
 const Home = () => {
 	return (
 		<Fragment>
@@ -17,6 +19,7 @@ const Home = () => {
 			<News />
 			<Mission />
 			<Beneficiaries />
+			<Founder />
 		</Fragment>
 	);
 };
