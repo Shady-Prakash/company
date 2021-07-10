@@ -1,0 +1,9 @@
+/** @format */
+
+.galleryCard {
+	padding: rem(40px);
+	&__img-holder {
+		display: grid;
+		place-items: center;
+	}
+}

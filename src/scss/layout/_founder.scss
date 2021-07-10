@@ -4,14 +4,14 @@
 	position: relative;
 	padding-top: rem(80px);
 
+	&:before {
+		@include position-absolute(100%, 100%, -2);
+		background-color: color(white);
+	}
 	&:after {
-		position: absolute;
-		content: '';
+		@include position-absolute(100%, calc(100% - 259px), -1);
 		top: 0;
-		width: 100%;
-		height: calc(100% - 259px);
 		background-color: color(secondary, light);
-		z-index: -1;
 	}
 	& h5 {
 		margin-bottom: rem(60px);

@@ -9,6 +9,7 @@ import News from '../../components/News/News';
 import Mission from '../../components/Mission';
 import Beneficiaries from '../../components/Beneficiaries';
 import Founder from '../../components/Founder';
+import Gallery from '../../components/Gallery';
 
 const Home = () => {
 	return (
@@ -20,6 +21,7 @@ const Home = () => {
 			<Mission />
 			<Beneficiaries />
 			<Founder />
+			<Gallery />
 		</Fragment>
 	);
 };

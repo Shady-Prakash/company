@@ -6,6 +6,14 @@
 	justify-content: space-between;
 }
 
+@mixin position-absolute($width, $height, $index) {
+	position: absolute;
+	content: '';
+	width: $width;
+	height: $height;
+	z-index: $index;
+}
+
 @mixin button($color, $border, $bg-color) {
 	color: $color;
 	border: $border;

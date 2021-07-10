@@ -1937,7 +1937,7 @@ progress {
   margin-bottom: 1rem;
   color: #212529;
   vertical-align: top;
-  border-color: #dee2e6;
+  border-color: #f2efee;
 }
 .table > :not(caption) > * > * {
   padding: 0.5rem 0.5rem;
@@ -5251,7 +5251,7 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1rem;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #f2efee;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }
@@ -5278,7 +5278,7 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: flex-end;
   padding: 0.75rem;
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid #f2efee;
   border-bottom-right-radius: calc(0.3rem - 1px);
   border-bottom-left-radius: calc(0.3rem - 1px);
 }
@@ -6387,7 +6387,7 @@ textarea.form-control-lg {
 }
 
 .border {
-  border: 1px solid #dee2e6 !important;
+  border: 1px solid #f2efee !important;
 }
 
 .border-0 {
@@ -6395,7 +6395,7 @@ textarea.form-control-lg {
 }
 
 .border-top {
-  border-top: 1px solid #dee2e6 !important;
+  border-top: 1px solid #f2efee !important;
 }
 
 .border-top-0 {
@@ -6403,7 +6403,7 @@ textarea.form-control-lg {
 }
 
 .border-end {
-  border-right: 1px solid #dee2e6 !important;
+  border-right: 1px solid #f2efee !important;
 }
 
 .border-end-0 {
@@ -6411,7 +6411,7 @@ textarea.form-control-lg {
 }
 
 .border-bottom {
-  border-bottom: 1px solid #dee2e6 !important;
+  border-bottom: 1px solid #f2efee !important;
 }
 
 .border-bottom-0 {
@@ -6419,7 +6419,7 @@ textarea.form-control-lg {
 }
 
 .border-start {
-  border-left: 1px solid #dee2e6 !important;
+  border-left: 1px solid #f2efee !important;
 }
 
 .border-start-0 {
@@ -11057,6 +11057,15 @@ header .header__mast nav ul li a {
 }
 
 /** @format */
+.galleryCard {
+  padding: 2.5rem;
+}
+.galleryCard__img-holder {
+  display: grid;
+  place-items: center;
+}
+
+/** @format */
 /** @format */
 .hero {
   position: relative;
@@ -11155,14 +11164,22 @@ header .header__mast nav ul li a {
   position: relative;
   padding-top: 5rem;
 }
+.founder:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-color: #ffffff;
+}
 .founder:after {
   position: absolute;
   content: "";
-  top: 0;
   width: 100%;
   height: calc(100% - 259px);
-  background-color: #d7c3ae;
   z-index: -1;
+  top: 0;
+  background-color: #d7c3ae;
 }
 .founder h5, .founder .h5 {
   margin-bottom: 3.75rem;
@@ -11196,6 +11213,12 @@ header .header__mast nav ul li a {
 .founder__bg--content ul li h2, .founder__bg--content ul li .h2 {
   display: inline-block;
   cursor: pointer;
+}
+
+/** @format */
+.gallery {
+  background-color: #ffffff;
+  padding: 3.75rem 0 7.5rem;
 }
 
 /*# sourceMappingURL=App.css.map */
