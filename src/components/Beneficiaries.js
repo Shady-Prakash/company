@@ -2,7 +2,12 @@
 
 import React, {Fragment} from 'react';
 import {Container} from 'react-bootstrap';
-import Bene1 from '../assets/uploads/Bene/Promo/Card/Image.jpg';
+import Bene1 from '../assets/uploads/Bene/Promo/Card/Bene1.jpg';
+import Bene2 from '../assets/uploads/Bene/Promo/Card/Bene2.jpg';
+import Bene3 from '../assets/uploads/Bene/Promo/Card/Bene3.jpg';
+import Bene4 from '../assets/uploads/Bene/Promo/Card/Bene4.jpg';
+import Bene5 from '../assets/uploads/Bene/Promo/Card/Bene4.jpg';
+
 import BeneCard from './Cards/BeneCard';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -15,6 +20,7 @@ const Beneficiaries = () => {
 		speed: 500,
 		slidesToShow: 4,
 		slidesToScroll: 1,
+
 		responsive: [
 			{
 				breakpoint: 1024,
@@ -49,51 +55,17 @@ const Beneficiaries = () => {
 				</Container>
 				<Container className='bene__slider'>
 					<Slider {...settings}>
-						<div>
-							<BeneCard
-								image={Bene1}
-								text='Morbi magna turpis dolor adipiscing'
-							/>
-						</div>
-						<div>
-							<BeneCard
-								image={Bene1}
-								text='Curabitur cursus bibendum mauris placerat'
-							/>
-						</div>
-						<div>
-							<BeneCard image={Bene1} text='Sagittis quam nunc platea est' />
-						</div>
-						<div>
-							<BeneCard image={Bene1} text='Nisi, sed dui, ac enim' />
-						</div>
-						<div>
-							<BeneCard image={Bene1} text='Vitae sodales sit id ullamcorper' />
-						</div>
-						<div>
-							<BeneCard image={Bene1} text='' />
-						</div>
-						<div>
-							<BeneCard image={Bene1} text='' />
-						</div>
-						<div>
-							<BeneCard image={Bene1} text='' />
-						</div>
-						<div>
-							<BeneCard image={Bene1} text='' />
-						</div>
-						<div>
-							<BeneCard image={Bene1} text='' />
-						</div>
-						<div>
-							<BeneCard image={Bene1} text='' />
-						</div>
-						<div>
-							<BeneCard image={Bene1} text='' />
-						</div>
-						<div>
-							<BeneCard image={Bene1} text='' />
-						</div>
+						<BeneCard
+							image={Bene1}
+							text='Morbi magna turpis dolor adipiscing'
+						/>
+						<BeneCard
+							image={Bene2}
+							text='Curabitur cursus bibendum mauris placerat'
+						/>
+						<BeneCard image={Bene3} text='Sagittis quam nunc platea est' />
+						<BeneCard image={Bene4} text='Nisi, sed dui, ac enim' />
+						<BeneCard image={Bene5} text='Vitae sodales sit id ullamcorper' />
 					</Slider>
 				</Container>
 			</section>
