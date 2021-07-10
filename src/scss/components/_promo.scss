@@ -8,9 +8,13 @@
 		}
 	}
 	&--img {
-		background: url('../../assets/uploads/Hero/Image.jpg');
-		min-height: 565px;
+		background: url('../../assets/uploads/Hero/Image.jpg') no-repeat;
+		min-height: rem(565px);
 		width: calc(100% - 120px);
 		margin: rem(80px) 0 0 auto;
+		&__mission {
+			background: url('../../assets/uploads/Image.jpg') no-repeat;
+			margin: 0 auto;
+		}
 	}
 }

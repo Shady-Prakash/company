@@ -1,0 +1,29 @@
+/** @format */
+
+.mission {
+	position: relative;
+	padding: rem(80px) rem(60px);
+	&__content {
+		max-width: rem(780px);
+		& h5 {
+			margin-bottom: rem(32px);
+		}
+		& h2 {
+			margin-bottom: rem(20px);
+		}
+		& p {
+			margin-bottom: rem(80px);
+			max-width: rem(570px);
+		}
+	}
+	&:after {
+		position: absolute;
+		content: '';
+		top: 0;
+		background-color: color(secondary, base);
+		height: calc(100% - 282px - 80px);
+		z-index: -1;
+		width: calc(100% - 60px);
+		left: 0;
+	}
+}

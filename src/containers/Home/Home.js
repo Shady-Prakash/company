@@ -6,6 +6,8 @@ import SocialIcons from '../../components/SocialIcons';
 import Header from '../../components/Header';
 import Hero from '../../components/Hero/Hero';
 import News from '../../components/News/News';
+import Mission from '../../components/Mission';
+import Beneficiaries from '../../components/Beneficiaries';
 const Home = () => {
 	return (
 		<Fragment>
@@ -13,6 +15,8 @@ const Home = () => {
 			<Header />
 			<Hero />
 			<News />
+			<Mission />
+			<Beneficiaries />
 		</Fragment>
 	);
 };
