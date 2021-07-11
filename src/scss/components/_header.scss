@@ -10,3 +10,14 @@ header {
 		left: rem(60px);
 	}
 }
+.scrolled {
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-bottom: 1px solid color(gray, three);
+	background-color: white;
+	width: 100%;
+	z-index: 9;
+	padding: rem(32px) 0;
+	transition: 0.3s all ease-in-out;
+}

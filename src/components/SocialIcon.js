@@ -12,12 +12,12 @@ const SocialIcon = () => {
 			<div className='social__icon'>
 				<ul className='list-unstyled d-flex '>
 					<li>
-						<Link to='/'>
+						<Link to='/' target='_blank' rel='noopener noreferrer'>
 							<img src={TwitterImg} alt='twitter Icon...'></img>
 						</Link>
 					</li>
 					<li>
-						<Link to='/'>
+						<Link to='/' target='_blank' rel='noopener noreferrer'>
 							<img src={LinkedinImg} alt='Linkedin Icon...'></img>
 						</Link>
 					</li>

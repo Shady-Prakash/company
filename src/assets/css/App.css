@@ -11001,6 +11001,18 @@ header:after {
   left: 3.75rem;
 }
 
+.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #c4c4c4;
+  background-color: white;
+  width: 100%;
+  z-index: 9;
+  padding: 2rem 0;
+  transition: 0.3s all ease-in-out;
+}
+
 /** @format */
 .btn {
   font-size: 1.125rem;
@@ -11077,6 +11089,9 @@ header:after {
 }
 
 /** @format */
+.beneCard {
+  margin-right: 3.75rem;
+}
 .beneCard__body {
   margin-top: 1.25rem;
 }
@@ -11195,7 +11210,7 @@ header:after {
   margin-bottom: 3.75rem;
 }
 .bene__slider.container {
-  padding-left: 0;
+  padding-right: 0;
   margin-right: 0;
   max-width: 1240px;
 }

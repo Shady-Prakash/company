@@ -15,14 +15,11 @@ import 'slick-carousel/slick/slick-theme.css';
 const Beneficiaries = () => {
 	var settings = {
 		dots: false,
-		centerMode: true,
 		arrows: false,
 		infinite: false,
 		speed: 500,
 		slidesToShow: 4,
 		slidesToScroll: 1,
-		className: 'center',
-		centerMode: true,
 		infinite: true,
 
 		responsive: [
