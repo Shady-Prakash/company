@@ -99,10 +99,16 @@ ul > li > a {
 	text-decoration: none;
 	color: unset;
 }
-a:hover,
-a:focus,
-a:active {
-	color: none;
+a:hover {
+	color: color(primary, base);
+}
+.btn {
+	&:focus {
+		box-shadow: none;
+	}
+	&:hover {
+		color: color(primary, base);
+	}
 }
 img {
 	max-width: 100%;

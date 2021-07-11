@@ -1,6 +1,8 @@
 /** @format */
 
 import React, {Fragment} from 'react';
+import {Link} from 'react-router-dom';
+
 const Card = ({type, image, title, subtitle, text}) => {
 	return (
 		<Fragment>
@@ -15,9 +17,15 @@ const Card = ({type, image, title, subtitle, text}) => {
 						</h6>
 					</div>
 					<div className='newsCard__title'>
-						<h2>{title ? title : ''}</h2>
-						<h3>{subtitle ? subtitle : ''}</h3>
-						<p>{text ? text : ''}</p>
+						<h2>
+							<Link to='/'>{title ? title : ''}</Link>
+						</h2>
+						<h3>
+							<Link to='/'>{subtitle ? subtitle : ''}</Link>
+						</h3>
+						<p>
+							<Link to='/'>{text ? text : ''}</Link>
+						</p>
 					</div>
 				</div>
 			</div>

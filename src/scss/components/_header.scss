@@ -1,21 +1,12 @@
 /** @format */
 header {
-	background-color: color(white);
+	position: relative;
 	padding: rem(67px) 0 rem(35px);
-	.header__mast {
-		& nav {
-			& ul {
-				& li:not(:last-child) {
-					margin-right: 60px;
-				}
-				& li {
-					& a {
-						font-size: rem(14px);
-						font-weight: $font-regular;
-						font-family: 'Inter';
-					}
-				}
-			}
-		}
+
+	&:after {
+		@include position-absolute(calc(100% - 60px), 100%, -1);
+		background-color: color(white);
+		top: 0;
+		left: rem(60px);
 	}
 }

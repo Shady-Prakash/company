@@ -10800,11 +10800,17 @@ b {
 /** @format */
 @font-face {
   font-family: "Galaxia";
+  font-weight: 400;
+  font-style: normal;
   src: url("../../assets/fonts/GalaxieCopernicus.otf") format("opentype");
+  font-display: swap;
 }
 @font-face {
   font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
   src: url("../../assets/fonts/Inter.ttf") format("truetype");
+  font-display: swap;
 }
 /** @format */
 svg:not(:root) {
@@ -10928,10 +10934,15 @@ ul > li > a {
   color: unset;
 }
 
-a:hover,
-a:focus,
-a:active {
-  color: none;
+a:hover {
+  color: #003a92;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+.btn:hover {
+  color: #003a92;
 }
 
 img {
@@ -10949,38 +10960,52 @@ ul li {
 
 /** @format */
 /** @format */
-.social__icons {
-  padding: 1.25rem 0;
-}
-.social__icons ul {
+.social__icon ul {
   float: right;
 }
-.social__icons ul li:not(:last-child) {
+.social__icon ul li:not(:last-child) {
   margin-right: 1.875rem;
 }
-.social__icons ul li a img {
+.social__icon ul li a img {
   max-width: 1rem;
 }
 
 /** @format */
-header {
-  background-color: #ffffff;
-  padding: 4.1875rem 0 2.1875rem;
+.social__icons {
+  padding: 1.25rem 0;
 }
-header .header__mast nav ul li:not(:last-child) {
+
+/** @format */
+nav ul li:not(:last-child) {
   margin-right: 60px;
 }
-header .header__mast nav ul li a {
+nav ul li a {
   font-size: 0.875rem;
   font-weight: 400;
   font-family: "Inter";
 }
 
 /** @format */
+header {
+  position: relative;
+  padding: 4.1875rem 0 2.1875rem;
+}
+header:after {
+  position: absolute;
+  content: "";
+  width: calc(100% - 60px);
+  height: 100%;
+  z-index: -1;
+  background-color: #ffffff;
+  top: 0;
+  left: 3.75rem;
+}
+
+/** @format */
 .btn {
   font-size: 1.125rem;
   font-weight: 700;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   font-family: "Inter";
 }
 .btn__primary {
@@ -11066,6 +11091,21 @@ header .header__mast nav ul li a {
 }
 
 /** @format */
+.footer {
+  background-color: #3c3c3c;
+  padding: 4.75rem 0 2.5rem;
+}
+.footer-top {
+  padding-bottom: 2.8125rem;
+}
+.footer-bottom {
+  padding: 1.25rem 0 10rem;
+}
+.footer-text span {
+  color: #c4c4c4;
+}
+
+/** @format */
 /** @format */
 .hero {
   position: relative;
@@ -11073,11 +11113,12 @@ header .header__mast nav ul li a {
 .hero:after {
   position: absolute;
   content: "";
-  width: 100%;
-  height: calc(100% - 359px);
-  background-color: #ffffff;
-  top: 0;
+  width: calc(100% - 60px);
+  height: calc(100% - 239px);
   z-index: -1;
+  background-color: #ffffff;
+  left: 3.75rem;
+  top: 0;
 }
 
 /** @format */

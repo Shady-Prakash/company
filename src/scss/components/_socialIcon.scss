@@ -1,0 +1,17 @@
+/** @format */
+
+.social__icon {
+	& ul {
+		float: right;
+		& li:not(:last-child) {
+			margin-right: rem(30px);
+		}
+		& li {
+			& a {
+				& img {
+					max-width: rem(16px);
+				}
+			}
+		}
+	}
+}

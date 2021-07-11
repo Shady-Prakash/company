@@ -3,12 +3,9 @@
 	position: relative;
 
 	&:after {
-		position: absolute;
-		content: '';
-		width: 100%;
-		height: calc(100% - 359px);
+		@include position-absolute(calc(100% - 60px), calc(100% - 239px), -1);
 		background-color: color(white);
+		left: rem(60px);
 		top: 0;
-		z-index: -1;
 	}
 }

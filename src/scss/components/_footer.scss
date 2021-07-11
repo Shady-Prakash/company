@@ -1,0 +1,17 @@
+/** @format */
+
+.footer {
+	background-color: color(gray, one);
+	padding: rem(76px) 0 rem(40px);
+	&-top {
+		padding-bottom: rem(45px);
+	}
+	&-bottom {
+		padding: rem(20px) 0 rem(160px);
+	}
+	&-text {
+		& span {
+			color: color(gray, three);
+		}
+	}
+}
