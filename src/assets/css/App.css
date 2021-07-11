@@ -11114,7 +11114,7 @@ header:after {
   position: absolute;
   content: "";
   width: calc(100% - 60px);
-  height: calc(100% - 239px);
+  height: calc(100% - 279px - 60px);
   z-index: -1;
   background-color: #ffffff;
   left: 3.75rem;
@@ -11194,10 +11194,10 @@ header:after {
 .bene h5, .bene .h5 {
   margin-bottom: 3.75rem;
 }
-.bene__slider .container {
+.bene__slider.container {
   padding-left: 0;
   margin-right: 0;
-  max-width: 77.5rem;
+  max-width: 1240px;
 }
 
 /** @format */

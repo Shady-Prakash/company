@@ -6,10 +6,10 @@
 		margin-bottom: rem(60px);
 	}
 	&__slider {
-		& .container {
+		&.container {
 			padding-left: 0;
 			margin-right: 0;
-			max-width: rem(1240px);
+			max-width: 1240px;
 		}
 	}
 }

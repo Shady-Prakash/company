@@ -3,7 +3,11 @@
 	position: relative;
 
 	&:after {
-		@include position-absolute(calc(100% - 60px), calc(100% - 239px), -1);
+		@include position-absolute(
+			calc(100% - 60px),
+			calc(100% - 279px - 60px),
+			-1
+		);
 		background-color: color(white);
 		left: rem(60px);
 		top: 0;
