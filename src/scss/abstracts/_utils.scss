@@ -31,3 +31,30 @@ b {
 .pr-0 {
 	padding-right: 0;
 }
+
+@include responsive-for(xs) {
+	h1 {
+		@include rfs(rem(28px));
+	}
+	h2 {
+		@include rfs(rem(24px));
+	}
+	h3 {
+		@include rfs(rem(20px));
+	}
+	h4 {
+		@include rfs(rem(18px));
+	}
+	h5 {
+		@include rfs(rem(14px));
+	}
+	h6 {
+		@include rfs(rem(10px));
+	}
+	p {
+		@include rfs(rem(14px));
+	}
+	.text-sm {
+		@include rfs(rem(12px));
+	}
+}

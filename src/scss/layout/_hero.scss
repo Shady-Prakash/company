@@ -11,5 +11,12 @@
 		background-color: color(white);
 		left: rem(60px);
 		top: 0;
+		@include responsive-for(lg) {
+			width: calc(100% - 2rem);
+			left: 2rem;
+		}
+		@include responsive-for(xs) {
+			height: calc(100% - 99px - 32px);
+		}
 	}
 }

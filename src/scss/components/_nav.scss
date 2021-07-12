@@ -36,6 +36,27 @@ nav {
 		height: 100%;
 		position: fixed;
 		padding: rem(35px);
+		overflow-y: scroll;
+		&__links {
+			color: color(white);
+			margin-top: rem(56px);
+			& li {
+				font-size: $p2;
+				font-weight: $font-regular;
+				font-family: 'Inter';
+				padding: rem(16px) 0 rem(20px);
+				&:not(:last-child) {
+					border-bottom: 1px solid color(gray, four);
+				}
+			}
+			&-sub {
+				& li {
+					&:last-child {
+						padding: 0;
+					}
+				}
+			}
+		}
 	}
 	.nav-icon {
 		display: block;
@@ -45,7 +66,7 @@ nav {
 			position: absolute;
 			top: 30px;
 			right: 30px;
-			height: rem(30px);
+			height: rem(18px);
 		}
 	}
 }

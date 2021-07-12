@@ -15,7 +15,7 @@ const News = () => {
 		<Fragment>
 			<section className='latestNews'>
 				<Container>
-					<Row>
+					<Row className='d-xl-flex d-xs-none'>
 						<Col>
 							<div className='latestNews__left'>
 								<Row>
@@ -28,7 +28,10 @@ const News = () => {
 											subtitle=''
 											text=''
 										/>
-										<Button type='btn__secondary' text='See all news' />
+										<Link
+											to='/'
+											type='btn__secondary'
+											text='See all news'></Link>
 									</Col>
 								</Row>
 							</div>
@@ -70,30 +73,58 @@ const News = () => {
 							</div>
 						</Col>
 					</Row>
-
-					{/* <div className='latestNews__container'>
-						<div className='latestNews__container--item'>
-							<div>
-								<h5 className='text-uppercase color-brand'>latest news</h5>
-							</div>
-						</div>
-						<div className='latestNews__container--item'>
-							<Card />
-						</div>
-						<div className='latestNews__container--item'>
-							<Card />
-						</div>
-						<div className='latestNews__container--item'>
-							<Card />
-						</div>
-						<div className='latestNews__container--item'>
-							<Card />
-						</div>
-						<div className='latestNews__container--item'>
-							<Button type='btn__secondary' text='See all news' />
-						</div>
-					</div> */}
 				</Container>
+				<div className='latestNews-wrapper'>
+					<Card
+						type='newsCard__lg'
+						image={Image1}
+						title='Molestie molesti metus, tempus in commodo, semper tellus'
+						subtitle=''
+						text=''
+					/>
+					<Card
+						type='newsCard__lg'
+						image={Image1}
+						title='Molestie molesti metus, tempus in commodo, semper tellus'
+						subtitle=''
+						text=''
+					/>
+					<Card
+						type='newsCard__lg'
+						image={Image1}
+						title='Molestie molesti metus, tempus in commodo, semper tellus'
+						subtitle=''
+						text=''
+					/>
+					<Card
+						type='newsCard__lg'
+						image={Image1}
+						title='Molestie molesti metus, tempus in commodo, semper tellus'
+						subtitle=''
+						text=''
+					/>
+					<Card
+						type='newsCard__lg'
+						image={Image1}
+						title='Molestie molesti metus, tempus in commodo, semper tellus'
+						subtitle=''
+						text=''
+					/>
+					<Card
+						type='newsCard__lg'
+						image={Image1}
+						title='Molestie molesti metus, tempus in commodo, semper tellus'
+						subtitle=''
+						text=''
+					/>
+					<Card
+						type='newsCard__sm'
+						image={Image4}
+						title=''
+						subtitle=''
+						text='In faucibus suspendisse magna massa nibh elementum augue phasellus tristique senectus urna'
+					/>
+				</div>
 			</section>
 		</Fragment>
 	);

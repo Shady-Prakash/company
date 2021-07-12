@@ -16,11 +16,23 @@ const Nav = () => {
 						<figure className='site-branding'>
 							<img src={Logo} alt='site logo...'></img>
 						</figure>
-						<ul className='nav-links'>
+						<ul className='d-flex flex-column nav-mobile__links '>
 							<li>
 								<Link to='/' onClick={() => setIsMobile(false)}>
 									Founders
 								</Link>
+								<ul className='nav-mobile__links-sub d-flex flex-column ps-5'>
+									<li className='border-0'>
+										<Link to='/' onClick={() => setIsMobile(false)}>
+											Maria Kenter
+										</Link>
+									</li>
+									<li className='border-0'>
+										<Link to='/' onClick={() => setIsMobile(false)}>
+											Roger Septimus
+										</Link>
+									</li>
+								</ul>
 							</li>
 							<li>
 								<Link to='/' onClick={() => setIsMobile(false)}>
@@ -31,6 +43,18 @@ const Nav = () => {
 								<Link to='/' onClick={() => setIsMobile(false)}>
 									Scholarships
 								</Link>
+								<ul className='nav-mobile__links-sub d-flex flex-column ps-5'>
+									<li className='border-0'>
+										<Link to='/' onClick={() => setIsMobile(false)}>
+											Sed ut tincidunt euismod malesuada
+										</Link>
+									</li>
+									<li className='border-0'>
+										<Link to='/' onClick={() => setIsMobile(false)}>
+											Nunc, sit in varius pulvinar
+										</Link>
+									</li>
+								</ul>
 							</li>
 							<li>
 								<Link to='/' onClick={() => setIsMobile(false)}>

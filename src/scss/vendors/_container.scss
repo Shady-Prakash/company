@@ -1,21 +1,21 @@
 /** @format */
 .container {
 	@include responsive-for(xxl) {
-		@include container-gutter(rem(30px), rem(30px));
+		@include container-gutter(rem(60px), rem(60px));
 	}
 	@include responsive-for(xl) {
-		@include container-gutter(rem(22px), rem(22px));
+		@include container-gutter(rem(44px), rem(44px));
 	}
 	@include responsive-for(lg) {
-		@include container-gutter(rem(16px), rem(16px));
+		@include container-gutter(rem(32px), rem(32px));
 	}
 	@include responsive-for(md) {
-		@include container-gutter(rem(12px), rem(12px));
+		@include container-gutter(rem(24px), rem(24px));
 	}
 	@include responsive-for(sm) {
-		@include container-gutter(rem(8px), rem(8px));
+		@include container-gutter(rem(16px), rem(16px));
 	}
 	@include responsive-for(xs) {
-		@include container-gutter(rem(4px), rem(4px));
+		@include container-gutter(rem(16px), rem(16px));
 	}
 }
