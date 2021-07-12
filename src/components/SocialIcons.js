@@ -9,7 +9,7 @@ const SocialIcons = () => {
 		<Fragment>
 			<section className='social__icons'>
 				<Container>
-					<Row>
+					<Row className='g-5'>
 						<Col sm={12}>
 							<SocialIcon />
 						</Col>

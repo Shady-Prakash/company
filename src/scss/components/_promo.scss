@@ -16,5 +16,8 @@
 			background: url('../../assets/uploads/Image.jpg') no-repeat;
 			margin: 0 auto 0 0;
 		}
+		@include responsive-for(xxl) {
+			width: calc(100% - 120px - 30px);
+		}
 	}
 }

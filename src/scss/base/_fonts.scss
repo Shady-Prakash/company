@@ -5,12 +5,10 @@ $font-path: '../../assets/fonts';
 	font-weight: 400;
 	font-style: normal;
 	src: url('#{$font-path}/GalaxieCopernicus.otf') format('opentype');
-	font-display: swap;
 }
 @font-face {
 	font-family: 'Inter';
 	font-weight: 400;
 	font-style: normal;
 	src: url('#{$font-path}/Inter.ttf') format('truetype');
-	font-display: swap;
 }

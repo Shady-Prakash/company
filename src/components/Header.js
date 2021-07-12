@@ -8,10 +8,11 @@ import Logo from '../assets/uploads/Nav/Default/logo.svg';
 import Nav from './Nav';
 
 const Header = () => {
+	//Sticky header on scroll
 	const [scrolled, setScrolled] = useState(false);
 	const handleScroll = () => {
 		const offset = window.scrollY;
-		if (offset > 200) {
+		if (offset > 100) {
 			setScrolled(true);
 		} else {
 			setScrolled(false);

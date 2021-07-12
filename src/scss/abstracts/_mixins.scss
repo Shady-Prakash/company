@@ -13,11 +13,9 @@
 	height: $height;
 	z-index: $index;
 }
-
-@mixin button($color, $border, $bg-color) {
-	color: $color;
-	border: $border;
-	background-image: $gradient-color;
+@mixin container-gutter($left, $right) {
+	padding-left: $left;
+	padding-right: $right;
 }
 @mixin transistion($transistion) {
 	transition: $transistion;
@@ -26,14 +24,19 @@
 	transform: translateX($translate);
 }
 // BREAK POINTS FOR THE DEVICES
-$xsm: 375px; // FOR MOBILE DEVICES == xsm
-$sm: 576px; // FOR SMALL DEVICES == sm
-$md: 768px; // FOR MEDIUM DEVICES == md
-$lg: 992px; // FOR LARGE DEVICES == lg
-$xlg: 1200px; // FOR EXTRA LARGE DEVICES == xlg
-
+$xs: 375px;
+$sm: 576px;
+$md: 786px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1680px;
+$xxxl: 1920px;
 @mixin responsive-for($size) {
-	@if $size == sm {
+	@if $size == xs {
+		@media all and (max-width: $xs) {
+			@content;
+		}
+	} @else if $size == sm {
 		@media all and (max-width: $sm) {
 			@content;
 		}
@@ -45,8 +48,16 @@ $xlg: 1200px; // FOR EXTRA LARGE DEVICES == xlg
 		@media all and (max-width: $lg) {
 			@content;
 		}
-	} @else if $size == xlg {
-		@media all and (max-width: $xlg) {
+	} @else if $size == xl {
+		@media all and (max-width: $xl) {
+			@content;
+		}
+	} @else if $size == xxl {
+		@media all and (max-width: $xxl) {
+			@content;
+		}
+	} @else if $size == xxl {
+		@media all and (max-width: $xxxl) {
 			@content;
 		}
 	}

@@ -1,7 +1,7 @@
 /** @format */
 
 nav {
-	& ul {
+	& .nav-links {
 		& li:not(:last-child) {
 			margin-right: 60px;
 		}
@@ -12,5 +12,39 @@ nav {
 				font-family: 'Inter';
 			}
 		}
+	}
+}
+.nav-icon {
+	display: none;
+}
+@media screen and (max-width: 992px) {
+	.site-branding {
+		display: flex;
+		top: 15px;
+		left: 35px;
+	}
+	.nav-links {
+		display: none;
+	}
+
+	.nav-mobile {
+		display: block;
+		background-color: color(primary, base);
+		top: 0px;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		padding: rem(35px);
+	}
+	.nav-icon {
+		display: block;
+		top: 15px;
+		right: 25px;
+	}
+	.close {
+		position: absolute;
+		top: 0;
+		right: 15px;
 	}
 }

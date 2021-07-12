@@ -9,7 +9,7 @@ const Founder = () => {
 
 	return (
 		<Fragment>
-			<section className='founder'>
+			<section className='founder' id='section-1'>
 				<Container>
 					<Row>
 						<Col sm={12} md={12}>

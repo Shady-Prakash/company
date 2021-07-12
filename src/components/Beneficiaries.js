@@ -50,7 +50,7 @@ const Beneficiaries = () => {
 
 	return (
 		<Fragment>
-			<section className='bene'>
+			<section className='bene' id='beneficiaries'>
 				<Container>
 					<h5 className='color-brand text-uppercase'>Beneficiaries</h5>
 				</Container>

@@ -1,0 +1,30 @@
+/** @format */
+
+$border-radius: rem(2px);
+$border-width: 1px;
+$border-color: #f2efee;
+$grid-breakpoints: (
+	xxs: 0,
+	xs: 375px,
+	sm: 576px,
+	md: 786px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1680px,
+);
+
+$container-max-widths: (
+	xs: 311px,
+	sm: 512px,
+	md: 690px,
+	lg: 864px,
+	xl: 1024px,
+	xxl: 1440px,
+);
+
+$font-family-sans-serif: 'Galaxia';
+$font-family-monospace: 'Inter';
+
+figure > img {
+	width: 100%;
+}
