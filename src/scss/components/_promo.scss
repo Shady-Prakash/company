@@ -5,6 +5,9 @@
 	&__content {
 		&--display-text {
 			width: rem(885px);
+			@include responsive-for(lg) {
+				width: unset;
+			}
 		}
 	}
 	&--img {
@@ -18,6 +21,9 @@
 		}
 		@include responsive-for(xxl) {
 			width: calc(100% - 120px - 30px);
+		}
+		@include responsive-for(xl) {
+			width: calc(100% - 120px);
 		}
 	}
 }

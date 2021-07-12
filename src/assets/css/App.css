@@ -2,10 +2,6 @@
 /** @format */
 /** @format */
 /** @format */
-figure > img {
-  width: 100%;
-}
-
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11993,11 +11989,11 @@ nav .nav-links li a {
     top: 15px;
     right: 25px;
   }
-
-  .close {
+  .nav-icon__close {
     position: absolute;
-    top: 0;
-    right: 15px;
+    top: 30px;
+    right: 30px;
+    height: 1.875rem;
   }
 }
 /** @format */
@@ -12068,6 +12064,11 @@ header:after {
 .promo__content--display-text {
   width: 55.3125rem;
 }
+@media all and (max-width: 992px) {
+  .promo__content--display-text {
+    width: unset;
+  }
+}
 .promo--img {
   background: url("../../assets/uploads/Hero/Image.jpg") no-repeat;
   min-height: 35.3125rem;
@@ -12081,6 +12082,11 @@ header:after {
 @media all and (max-width: 1680px) {
   .promo--img {
     width: calc(100% - 120px - 30px);
+  }
+}
+@media all and (max-width: 1200px) {
+  .promo--img {
+    width: calc(100% - 120px);
   }
 }
 
@@ -12237,6 +12243,11 @@ header:after {
 @media all and (max-width: 1680px) {
   .bene__slider.container {
     max-width: 1556px;
+  }
+}
+@media all and (max-width: 1680px) {
+  .bene__slider.container {
+    max-width: 1108px;
   }
 }
 

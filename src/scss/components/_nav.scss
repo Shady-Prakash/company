@@ -41,10 +41,11 @@ nav {
 		display: block;
 		top: 15px;
 		right: 25px;
-	}
-	.close {
-		position: absolute;
-		top: 0;
-		right: 15px;
+		&__close {
+			position: absolute;
+			top: 30px;
+			right: 30px;
+			height: rem(30px);
+		}
 	}
 }

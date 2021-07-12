@@ -8,13 +8,13 @@ const Promo = () => {
 	return (
 		<div className='promo'>
 			<Container>
-				<div className='promo__content d-flex justify-content-between'>
-					<div className='promo__content--display-text'>
+				<div className='promo__content d-flex justify-content-between flex-xs-column '>
+					<div className='promo__content--display-text mb-xs-5 mb-xl-0'>
 						<h1 className='color-brand'>
 							Ullamcorper diam turpis egestas egestas fames enim risus sed proin
 						</h1>
 					</div>
-					<div className='cta align-self-end'>
+					<div className='cta align-self-xl-end align-self-sm-start'>
 						<Button type='btn__primary' text='Read more' />
 					</div>
 				</div>

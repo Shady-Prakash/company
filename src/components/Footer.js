@@ -26,10 +26,10 @@ const Footer = () => {
 							</div>
 							<div className='footer-bottom'>
 								<Row>
-									<Col md={8} className='text-white'>
+									<Col md={10} className='text-white'>
 										<Nav />
 									</Col>
-									<Col md={4}>
+									<Col md={2}>
 										<SocialIcon />
 									</Col>
 								</Row>

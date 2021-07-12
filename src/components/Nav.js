@@ -3,7 +3,8 @@
 import React, {Fragment, useState} from 'react';
 import {Link} from 'react-router-dom';
 import Logo from '../assets/uploads/logo-white.svg';
-
+import Burger from '../assets/uploads/Nav/Burger.svg';
+import Close from '../assets/uploads/Nav/Close.svg';
 const Nav = () => {
 	// Mobile menu
 	const [isMobile, setIsMobile] = useState(false);
@@ -83,7 +84,18 @@ const Nav = () => {
 					</ul>
 				)}
 				<div className='nav-icon' onClick={() => setIsMobile(!isMobile)}>
-					{isMobile ? <p className='close'> CLOSE</p> : <p>MENU</p>}
+					{isMobile ? (
+						<Fragment>
+							<img
+								src={Close}
+								alt='burger icon'
+								className='nav-icon__close'></img>
+						</Fragment>
+					) : (
+						<Fragment>
+							<img src={Burger} alt='burger icon'></img>
+						</Fragment>
+					)}
 				</div>
 			</nav>
 		</Fragment>

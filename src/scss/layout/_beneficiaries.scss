@@ -13,6 +13,9 @@
 			@include responsive-for(xxl) {
 				max-width: 1556px;
 			}
+			@include responsive-for(xxl) {
+				max-width: 1108px;
+			}
 		}
 	}
 }
