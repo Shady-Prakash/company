@@ -18,7 +18,7 @@ const Footer = () => {
 							<div className='footer-top'>
 								<Row>
 									<Col md={12}>
-										<div className='footer-top__icon d-xs-flex justify-content-xs-between'>
+										<div className='footer-top__icon d-flex justify-content-between'>
 											<figure className='site-branding'>
 												<Link to='/'>
 													<img src={Logo} alt='site-branding...'></img>
@@ -55,7 +55,7 @@ const Footer = () => {
 											</li>
 										</ul>
 									</Col>
-									<Col md={2} className='d-xs-none d-xl-block'>
+									<Col md={2} className='d-none d-xs-none d-xl-block'>
 										<SocialIcon image1={TwitterImg} image2={LinkedinImg} />
 									</Col>
 								</Row>

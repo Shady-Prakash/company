@@ -12009,6 +12009,11 @@ ul li {
 nav .nav-links li:not(:last-child) {
   margin-right: 60px;
 }
+@media all and (max-width: 1200px) {
+  nav .nav-links li:not(:last-child) {
+    margin-right: 2.8125rem;
+  }
+}
 nav .nav-links li a {
   font-size: 0.875rem;
   font-weight: 400;
@@ -12101,6 +12106,11 @@ header:after {
     left: 1rem;
   }
 }
+@media all and (max-width: 375px) {
+  header:after {
+    width: calc(100% - 0.5rem);
+  }
+}
 
 .scrolled {
   position: fixed;
@@ -12131,6 +12141,11 @@ header:after {
   padding: 1.3125rem 1.375rem;
   border: 0.0625rem solid #c4c4c4;
 }
+@media all and (max-width: 786px) {
+  .btn__primary {
+    padding: 0.8125rem 0.75rem;
+  }
+}
 .btn__primary:after {
   position: absolute;
   content: "";
@@ -12143,13 +12158,30 @@ header:after {
   max-width: 0.5625rem;
   margin-left: 3.375rem;
 }
+@media all and (max-width: 786px) {
+  .btn__primary img {
+    max-width: 0.375rem;
+    margin-left: 1.5rem;
+  }
+}
 .btn__secondary {
   padding: 0 0 0.875rem;
   border-bottom: 1px solid #c4c4c4;
 }
+@media all and (max-width: 786px) {
+  .btn__secondary {
+    padding: 0 0 0.8125rem;
+  }
+}
 .btn__secondary img {
   max-width: 0.5625rem;
   margin-left: 1.0625rem;
+}
+@media all and (max-width: 786px) {
+  .btn__secondary img {
+    max-width: 0.375rem;
+    margin-left: 0.75rem;
+  }
 }
 
 /** @format */
@@ -12372,6 +12404,7 @@ header:after {
 }
 @media all and (max-width: 375px) {
   .hero:after {
+    width: calc(100% - 0.5rem);
     height: calc(100% - 99px - 32px);
   }
 }
@@ -12562,6 +12595,16 @@ header:after {
   bottom: 16px;
   left: 16px;
 }
+@media all and (max-width: 786px) {
+  .founder-content--name img {
+    max-width: 0.375rem;
+  }
+}
+@media all and (max-width: 375px) {
+  .founder-content--name img {
+    max-width: 0.25rem;
+  }
+}
 
 /** @format */
 .gallery {
@@ -12632,6 +12675,16 @@ header:after {
 @media all and (max-width: 576px) {
   .slider {
     width: calc(100% - 32px - 16px);
+  }
+}
+@media (min-width: 1680) {
+  .slider .slider {
+    width: calc(100% - 120px - 60px);
+  }
+}
+@media (min-width: 1920) {
+  .slider .slider {
+    width: calc(100% - 240px - 60px);
   }
 }
 

@@ -41,7 +41,7 @@ const Beneficiaries = () => {
 					<h5 className='color-brand text-uppercase'>Beneficiaries</h5>
 					<Carousel
 						swipeable={true}
-						draggable={true}
+						draggable={false}
 						showDots={false}
 						responsive={responsive}
 						infinite={true}
@@ -49,8 +49,6 @@ const Beneficiaries = () => {
 						partialVisible
 						keyBoardControl={true}
 						dotListClass=''
-						customTransition='all .5'
-						transitionDuration={500}
 						containerClass='carousel-container'
 						removeArrowOnDeviceType={['desktop', 'tablet', 'mobile']}
 						itemClass='carousel-item-padding-40-px'>

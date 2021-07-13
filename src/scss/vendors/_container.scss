@@ -31,4 +31,14 @@
 	@include responsive-for(sm) {
 		width: calc(100% - 32px - 16px);
 	}
+	@media (min-width: 1680) {
+		.slider {
+			width: calc(100% - 120px - 60px);
+		}
+	}
+	@media (min-width: 1920) {
+		.slider {
+			width: calc(100% - 240px - 60px);
+		}
+	}
 }

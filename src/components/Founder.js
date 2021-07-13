@@ -49,7 +49,7 @@ const Founder = () => {
 					</Row>
 				</Container>
 
-				<div className='founder__bg d-xs-none d-xl-block'>
+				<div className='founder__bg d-none d-xl-block'>
 					<figure>
 						<img src={founder} alt='founder image...'></img>
 					</figure>

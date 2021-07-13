@@ -35,7 +35,7 @@ const News = () => {
 			<section className='latestNews'>
 				{/* Desktop screen */}
 				<Container>
-					<Row className='d-xs-none d-xl-flex '>
+					<Row className='d-none d-xl-flex '>
 						<Col>
 							<div className='latestNews__left'>
 								<Row>
@@ -100,7 +100,7 @@ const News = () => {
 					<h5 className='text-uppercase color-brand'>latest news</h5>
 					<Carousel
 						swipeable={true}
-						draggable={true}
+						draggable={false}
 						showDots={false}
 						responsive={responsive}
 						infinite={true}
@@ -108,8 +108,6 @@ const News = () => {
 						partialVisible
 						keyBoardControl={true}
 						dotListClass=''
-						customTransition='all .5'
-						transitionDuration={500}
 						containerClass='carousel-container d-xl-none'
 						removeArrowOnDeviceType={['desktop', 'tablet', 'mobile']}
 						itemClass='carousel-item-padding-40-px'>

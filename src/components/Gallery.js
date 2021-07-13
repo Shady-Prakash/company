@@ -34,7 +34,7 @@ const Gallery = () => {
 		<Fragment>
 			<section className='gallery'>
 				<Container>
-					<Row className='gx-0 d-flex align-items-start d-xs-none d-xl-flex'>
+					<Row className='gx-0 d-flex align-items-start d-none d-xl-flex'>
 						<Col sm={4} className='align-self-center'>
 							<Row className='gx-0'>
 								<Col sm={12} className='mt-0 mb-3 mt-md-2 mb-md-5'>
@@ -68,7 +68,7 @@ const Gallery = () => {
 					<h5 className='color-brand text-uppercase'>Gallery</h5>
 					<Carousel
 						swipeable={true}
-						draggable={true}
+						draggable={false}
 						showDots={false}
 						responsive={responsive}
 						infinite={true}
@@ -76,8 +76,6 @@ const Gallery = () => {
 						partialVisible
 						keyBoardControl={true}
 						dotListClass=''
-						customTransition='all .5'
-						transitionDuration={500}
 						containerClass='carousel-container '
 						removeArrowOnDeviceType={['desktop', 'tablet', 'mobile']}
 						itemClass='carousel-item-padding-0-px'>

@@ -15,6 +15,9 @@ header {
 			width: calc(100% - 1rem);
 			left: 1rem;
 		}
+		@include responsive-for(xs) {
+			width: calc(100% - 0.5rem);
+		}
 	}
 }
 .scrolled {

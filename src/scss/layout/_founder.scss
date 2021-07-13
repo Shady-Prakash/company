@@ -69,6 +69,14 @@
 			content: '';
 			bottom: 16px;
 			left: 16px;
+			& img {
+				@include responsive-for(md) {
+					max-width: rem(6px);
+				}
+				@include responsive-for(xs) {
+					max-width: rem(4px);
+				}
+			}
 		}
 	}
 }

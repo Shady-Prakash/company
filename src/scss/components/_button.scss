@@ -12,6 +12,9 @@
 		position: relative;
 		padding: rem(21px) rem(22px);
 		border: rem(1px) solid color(gray, three);
+		@include responsive-for(md) {
+			padding: rem(13px) rem(12px);
+		}
 
 		&:after {
 			position: absolute;
@@ -24,14 +27,26 @@
 		& img {
 			max-width: rem(9px);
 			margin-left: rem(54px);
+			@include responsive-for(md) {
+				max-width: rem(6px);
+				margin-left: rem(24px);
+			}
 		}
 	}
 	&__secondary {
 		padding: 0 0 rem(14px);
 		border-bottom: 1px solid color(gray, three);
+		@include responsive-for(md) {
+			padding: 0 0 rem(13px);
+		}
+
 		& img {
 			max-width: rem(9px);
 			margin-left: rem(17px);
+			@include responsive-for(md) {
+				max-width: rem(6px);
+				margin-left: rem(12px);
+			}
 		}
 	}
 }
