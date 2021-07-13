@@ -5,4 +5,9 @@
 	&__body {
 		margin-top: rem(20px);
 	}
+	& figure {
+		img {
+			width: 100%;
+		}
+	}
 }

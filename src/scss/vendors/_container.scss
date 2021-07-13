@@ -19,3 +19,16 @@
 		@include container-gutter(rem(16px), rem(16px));
 	}
 }
+
+.slider {
+	@include responsive-for(xl) {
+		width: calc(100% - 88px - 2.75rem);
+		margin-left: auto;
+	}
+	@include responsive-for(md) {
+		width: calc(100% - 48px - 48px - 24px);
+	}
+	@include responsive-for(sm) {
+		width: calc(100% - 32px - 16px);
+	}
+}

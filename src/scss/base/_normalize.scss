@@ -72,6 +72,9 @@ p {
 	font-size: $p1;
 	letter-spacing: 0.02em;
 	font-weight: $font-medium;
+	@include responsive-for(sm) {
+		@include rfs(rem(12px));
+	}
 }
 b {
 	line-height: 1;

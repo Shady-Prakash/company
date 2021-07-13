@@ -23,7 +23,8 @@ const Beneficiaries = () => {
 		tablet: {
 			breakpoint: {max: 1024, min: 464},
 			items: 2,
-			slidesToSlide: 1, // optional, default to 1.
+			slidesToSlide: 1,
+			partialVisibilityGutter: 40, // optional, default to 1.
 		},
 		mobile: {
 			breakpoint: {max: 464, min: 0},
@@ -36,12 +37,12 @@ const Beneficiaries = () => {
 	return (
 		<Fragment>
 			<section className='bene' id='beneficiaries'>
-				<Container className='pe-0 me-0'>
+				<div className='slider bene-slider'>
 					<h5 className='color-brand text-uppercase'>Beneficiaries</h5>
 					<Carousel
 						swipeable={true}
 						draggable={true}
-						showDots={true}
+						showDots={false}
 						responsive={responsive}
 						infinite={true}
 						autoPlaySpeed={1000}
@@ -52,7 +53,7 @@ const Beneficiaries = () => {
 						transitionDuration={500}
 						containerClass='carousel-container'
 						removeArrowOnDeviceType={['desktop', 'tablet', 'mobile']}
-						itemClass='carousel-item-padding-60-px'>
+						itemClass='carousel-item-padding-40-px'>
 						<BeneCard
 							image={Bene1}
 							text='Morbi magna turpis dolor adipiscing'
@@ -65,7 +66,7 @@ const Beneficiaries = () => {
 						<BeneCard image={Bene4} text='Nisi, sed dui, ac enim' />
 						<BeneCard image={Bene5} text='Vitae sodales sit id ullamcorper' />
 					</Carousel>
-				</Container>
+				</div>
 			</section>
 		</Fragment>
 	);

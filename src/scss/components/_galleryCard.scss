@@ -2,6 +2,9 @@
 
 .galleryCard {
 	padding: rem(40px);
+	@include responsive-for(xs) {
+		padding: rem(16px) rem(10px);
+	}
 	&__img-holder {
 		display: grid;
 		place-items: center;

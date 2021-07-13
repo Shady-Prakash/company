@@ -9,7 +9,7 @@ const Promo = () => {
 		<div className='promo'>
 			<Container>
 				<div className='promo__content d-flex justify-content-between flex-xs-column '>
-					<div className='promo__content--display-text mb-xs-4 mb-sm-5 mb-xl-0'>
+					<div className='promo__content--display-text mb-xs-4 mb-xl-0'>
 						<h1 className='color-brand'>
 							Ullamcorper diam turpis egestas egestas fames enim risus sed proin
 						</h1>

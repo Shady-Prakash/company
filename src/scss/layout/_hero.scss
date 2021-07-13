@@ -15,6 +15,9 @@
 			width: calc(100% - 1rem);
 			left: 1rem;
 		}
+		@include responsive-for(sm) {
+			height: calc(100% - 90px - 60px);
+		}
 		@include responsive-for(xs) {
 			height: calc(100% - 99px - 32px);
 		}

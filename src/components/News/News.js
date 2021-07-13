@@ -96,12 +96,12 @@ const News = () => {
 				</Container>
 
 				{/* Mobile screen */}
-				<div className='latestNews-slider d-xl-none'>
+				<div className='slider latestNews-slider d-xl-none'>
 					<h5 className='text-uppercase color-brand'>latest news</h5>
 					<Carousel
 						swipeable={true}
 						draggable={true}
-						showDots={true}
+						showDots={false}
 						responsive={responsive}
 						infinite={true}
 						autoPlaySpeed={1000}

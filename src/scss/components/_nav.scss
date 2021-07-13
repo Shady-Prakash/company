@@ -22,6 +22,11 @@ nav {
 		display: flex;
 		top: 15px;
 		left: 35px;
+		& figure {
+			& img {
+				width: 60%;
+			}
+		}
 	}
 	.nav-links {
 		display: none;
@@ -47,7 +52,7 @@ nav {
 				font-family: 'Inter';
 				padding: rem(16px) 0 rem(20px);
 				&:not(:last-child) {
-					border-bottom: 1px solid color(gray, four);
+					border-bottom: 1px solid rgba(255, 254, 255, 10%);
 				}
 			}
 			&-sub {

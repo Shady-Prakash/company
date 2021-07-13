@@ -11,7 +11,7 @@
 	}
 	& .container {
 		@include responsive-for(xs) {
-			max-width: 340px;
+			max-width: calc(100% - 32px -1rem);
 		}
 	}
 }

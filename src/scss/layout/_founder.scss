@@ -4,7 +4,7 @@
 	position: relative;
 	padding-top: rem(80px);
 	@include responsive-for(xs) {
-		padding-top: rem(40px);
+		padding: rem(40px) 0;
 	}
 	&:before {
 		@include position-absolute(100%, 100%, -2);
@@ -14,6 +14,9 @@
 		@include position-absolute(100%, calc(100% - 259px), -1);
 		top: 0;
 		background-color: color(secondary, light);
+		@include responsive-for(sm) {
+			height: calc(100% - 312px);
+		}
 		@include responsive-for(xs) {
 			height: 125px;
 		}

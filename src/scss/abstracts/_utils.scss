@@ -32,7 +32,7 @@ b {
 	padding-right: 0;
 }
 
-@include responsive-for(xs) {
+@include responsive-for(md) {
 	h1 {
 		@include rfs(rem(28px));
 	}
@@ -54,7 +54,8 @@ b {
 	p {
 		@include rfs(rem(14px));
 	}
-	.text-sm {
+	.text-sm,
+	a {
 		@include rfs(rem(12px));
 	}
 }

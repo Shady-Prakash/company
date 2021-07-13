@@ -2,12 +2,11 @@
 
 .latestNews {
 	padding: rem(60px) 0;
-	@include responsive-for(xs) {
+	@include responsive-for(sm) {
 		padding: rem(32px) 0;
 	}
 
 	&-slider {
-		width: calc(100% - 32px - 16px);
 		margin-left: auto;
 		& .newsCard {
 			margin-top: rem(16px);

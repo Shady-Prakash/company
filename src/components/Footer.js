@@ -5,6 +5,8 @@ import {Link} from 'react-router-dom';
 import Logo from '../assets/uploads/Footer/logo-white.svg';
 import SocialIcon from './SocialIcon';
 import Nav from './Nav';
+import TwitterImg from '../assets/uploads/Twitter-white.svg';
+import LinkedinImg from '../assets/uploads/Vector-white.svg';
 
 const Footer = () => {
 	return (
@@ -13,30 +15,57 @@ const Footer = () => {
 				<Container>
 					<Row>
 						<Col>
-							<div className='footer-top border-bottom border-white'>
+							<div className='footer-top'>
 								<Row>
 									<Col md={12}>
-										<figure className='site-branding'>
-											<Link to='/'>
-												<img src={Logo} alt='site-branding...'></img>
-											</Link>
-										</figure>
+										<div className='footer-top__icon d-xs-flex justify-content-xs-between'>
+											<figure className='site-branding'>
+												<Link to='/'>
+													<img src={Logo} alt='site-branding...'></img>
+												</Link>
+											</figure>
+											<div className='d-xs-block d-xl-none'>
+												<SocialIcon image1={TwitterImg} image2={LinkedinImg} />
+											</div>
+										</div>
 									</Col>
 								</Row>
 							</div>
 							<div className='footer-bottom'>
 								<Row>
-									<Col md={10} className='text-white'>
-										<Nav />
+									<Col xs={10} md={10} className='text-white'>
+										<ul className='footer-bottom__nav'>
+											<li>
+												<Link to='/'>Founders</Link>
+											</li>
+											<li>
+												<Link to='/'>Beneficiaries</Link>
+											</li>
+											<li>
+												<Link to='/'>Scholarships</Link>
+											</li>
+											<li>
+												<Link to='/'>Press</Link>
+											</li>
+											<li>
+												<Link to='/'>Blog</Link>
+											</li>
+											<li>
+												<Link to='/'>Contact</Link>
+											</li>
+										</ul>
 									</Col>
-									<Col md={2}>
-										<SocialIcon />
+									<Col md={2} className='d-xs-none d-xl-block'>
+										<SocialIcon image1={TwitterImg} image2={LinkedinImg} />
 									</Col>
 								</Row>
 							</div>
 							<div className='footer-text'>
 								<Row>
-									<Col sm={6} className='text-white text-capitalize'>
+									<Col
+										xs={12}
+										lg={6}
+										className='text-white text-capitalize  mb-3 mb-xl-0 text-sm-center'>
 										<span className='text-sm me-5'>
 											<Link to='/'>Privacy policy</Link>
 										</span>
@@ -44,7 +73,10 @@ const Footer = () => {
 											<Link to='/'>Terms & conditions</Link>
 										</span>
 									</Col>
-									<Col sm={6} className='text-end text-white text-capitalize'>
+									<Col
+										xs={12}
+										lg={6}
+										className='text-center text-sm-center text-xl-end  text-white text-capitalize '>
 										<span className='text-sm '>
 											&copy; 2021 Company Name. All rights reserved.
 										</span>

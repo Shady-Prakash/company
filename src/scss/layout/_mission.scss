@@ -8,6 +8,9 @@
 	}
 	&__content {
 		max-width: rem(780px);
+		@include responsive-for(sm) {
+			max-width: unset;
+		}
 		& h5 {
 			margin-bottom: rem(32px);
 			@include responsive-for(xs) {
@@ -23,7 +26,7 @@
 		& p {
 			margin-bottom: rem(80px);
 			max-width: rem(570px);
-			@include responsive-for(xs) {
+			@include responsive-for(sm) {
 				margin-bottom: rem(40px);
 				max-width: unset;
 			}
@@ -38,7 +41,7 @@
 		z-index: -1;
 		width: calc(100% - 60px);
 		left: 0;
-		@include responsive-for(xs) {
+		@include responsive-for(sm) {
 			width: calc(100% - 16px);
 			height: calc(100% - 96px - 32px);
 		}

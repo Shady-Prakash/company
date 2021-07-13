@@ -3,4 +3,15 @@
 .gallery {
 	background-color: color(white);
 	padding: rem(60px) 0 rem(120px);
+	@include responsive-for(xs) {
+		padding: rem(32px) 0 rem(64px);
+	}
+	&-slider {
+		& h5 {
+			margin-bottom: rem(16px);
+		}
+		& .galleryCard {
+			border: 1px solid color(gray, four);
+		}
+	}
 }
