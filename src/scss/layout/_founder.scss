@@ -31,6 +31,12 @@
 		position: relative;
 		width: calc(100% - 120px);
 		margin: 0 auto;
+
+		& figure {
+			& img {
+				width: 100%;
+			}
+		}
 		&--content {
 			position: absolute;
 			content: '';

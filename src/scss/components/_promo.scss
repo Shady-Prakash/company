@@ -15,6 +15,7 @@
 	}
 	&--img {
 		background: url('../../assets/uploads/Hero/Image.jpg') no-repeat;
+		background-size: cover;
 		min-height: rem(565px);
 		width: calc(100% - 120px);
 		margin: rem(80px) 0 0 auto;

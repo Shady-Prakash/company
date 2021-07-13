@@ -37,7 +37,7 @@ const Beneficiaries = () => {
 	return (
 		<Fragment>
 			<section className='bene' id='beneficiaries'>
-				<div className='slider bene-slider'>
+				<Container>
 					<h5 className='color-brand text-uppercase'>Beneficiaries</h5>
 					<Carousel
 						swipeable={true}
@@ -64,7 +64,7 @@ const Beneficiaries = () => {
 						<BeneCard image={Bene4} text='Nisi, sed dui, ac enim' />
 						<BeneCard image={Bene5} text='Vitae sodales sit id ullamcorper' />
 					</Carousel>
-				</div>
+				</Container>
 			</section>
 		</Fragment>
 	);

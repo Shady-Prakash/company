@@ -12203,6 +12203,7 @@ header:after {
 }
 .promo--img {
   background: url("../../assets/uploads/Hero/Image.jpg") no-repeat;
+  background-size: cover;
   min-height: 35.3125rem;
   width: calc(100% - 120px);
   margin: 5rem 0 0 auto;
@@ -12500,9 +12501,20 @@ header:after {
   margin-bottom: 3.75rem;
   margin-bottom: 1rem;
 }
-@media all and (max-width: 375px) {
+@media all and (max-width: 1680px) {
   .bene .container {
-    max-width: calc(100% - 32px -1rem);
+    padding-left: 0;
+    margin-right: 0;
+  }
+}
+@media all and (max-width: 786px) {
+  .bene .container {
+    max-width: calc(690px - 1.5rem - 1.5rem);
+  }
+}
+@media all and (max-width: 576px) {
+  .bene .container {
+    max-width: calc(100% - 32px);
   }
 }
 
@@ -12555,6 +12567,9 @@ header:after {
   position: relative;
   width: calc(100% - 120px);
   margin: 0 auto;
+}
+.founder__bg figure img {
+  width: 100%;
 }
 .founder__bg--content {
   position: absolute;
@@ -12677,14 +12692,21 @@ header:after {
     width: calc(100% - 32px - 16px);
   }
 }
-@media (min-width: 1680) {
-  .slider .slider {
+
+@media (min-width: 1200px) {
+  .slider {
+    width: calc(100% - 120px - 31px);
+    margin-left: auto;
+  }
+}
+@media (min-width: 1680px) {
+  .slider {
     width: calc(100% - 120px - 60px);
   }
 }
-@media (min-width: 1920) {
-  .slider .slider {
-    width: calc(100% - 240px - 60px);
+@media (min-width: 1920px) {
+  .slider {
+    width: calc(100% - 252px);
   }
 }
 
