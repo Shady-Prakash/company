@@ -2,20 +2,16 @@
 .bene {
 	background-color: color(white);
 	padding: rem(80px) 0 rem(106px);
+	@include responsive-for(xs) {
+		padding: rem(24px) 0 rem(68px);
+	}
 	& h5 {
 		margin-bottom: rem(60px);
+		margin-bottom: rem(16px);
 	}
-	&__slider {
-		&.container {
-			padding-right: 0;
-			margin-right: 0;
-			max-width: 1240px;
-			@include responsive-for(xxl) {
-				max-width: 1556px;
-			}
-			@include responsive-for(xxl) {
-				max-width: 1108px;
-			}
+	& .container {
+		@include responsive-for(xs) {
+			max-width: 340px;
 		}
 	}
 }

@@ -3,17 +3,30 @@
 .mission {
 	position: relative;
 	padding: rem(80px) 0 rem(60px);
+	@include responsive-for(xs) {
+		padding: rem(32px) 0;
+	}
 	&__content {
 		max-width: rem(780px);
 		& h5 {
 			margin-bottom: rem(32px);
+			@include responsive-for(xs) {
+				margin-bottom: rem(16px);
+			}
 		}
 		& h2 {
 			margin-bottom: rem(20px);
+			@include responsive-for(xs) {
+				margin-bottom: rem(8px);
+			}
 		}
 		& p {
 			margin-bottom: rem(80px);
 			max-width: rem(570px);
+			@include responsive-for(xs) {
+				margin-bottom: rem(40px);
+				max-width: unset;
+			}
 		}
 	}
 	&:after {
@@ -25,5 +38,9 @@
 		z-index: -1;
 		width: calc(100% - 60px);
 		left: 0;
+		@include responsive-for(xs) {
+			width: calc(100% - 16px);
+			height: calc(100% - 96px - 32px);
+		}
 	}
 }

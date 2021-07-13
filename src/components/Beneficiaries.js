@@ -9,53 +9,50 @@ import Bene4 from '../assets/uploads/Bene/Promo/Card/Bene4.jpg';
 import Bene5 from '../assets/uploads/Bene/Promo/Card/Bene4.jpg';
 
 import BeneCard from './Cards/BeneCard';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-const Beneficiaries = () => {
-	var settings = {
-		dots: false,
-		arrows: false,
-		infinite: false,
-		speed: 500,
-		slidesToShow: 4,
-		slidesToScroll: 1,
-		infinite: true,
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
-		responsive: [
-			{
-				breakpoint: 1024,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 3,
-					infinite: true,
-				},
-			},
-			{
-				breakpoint: 600,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 2,
-				},
-			},
-			{
-				breakpoint: 480,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-				},
-			},
-		],
+const Beneficiaries = () => {
+	const responsive = {
+		desktop: {
+			breakpoint: {max: 3000, min: 1024},
+			items: 3,
+			slidesToSlide: 1,
+			partialVisibilityGutter: 60, // optional, default to 1.
+		},
+		tablet: {
+			breakpoint: {max: 1024, min: 464},
+			items: 2,
+			slidesToSlide: 1, // optional, default to 1.
+		},
+		mobile: {
+			breakpoint: {max: 464, min: 0},
+			items: 1,
+			slidesToSlide: 1,
+			partialVisibilityGutter: 60, // optional, default to 1.
+		},
 	};
 
 	return (
 		<Fragment>
 			<section className='bene' id='beneficiaries'>
-				<Container>
+				<Container className='pe-0 me-0'>
 					<h5 className='color-brand text-uppercase'>Beneficiaries</h5>
-				</Container>
-				<Container className='bene__slider'>
-					<Slider {...settings}>
+					<Carousel
+						swipeable={true}
+						draggable={true}
+						showDots={true}
+						responsive={responsive}
+						infinite={true}
+						autoPlaySpeed={1000}
+						partialVisible
+						keyBoardControl={true}
+						dotListClass=''
+						customTransition='all .5'
+						transitionDuration={500}
+						containerClass='carousel-container'
+						removeArrowOnDeviceType={['desktop', 'tablet', 'mobile']}
+						itemClass='carousel-item-padding-60-px'>
 						<BeneCard
 							image={Bene1}
 							text='Morbi magna turpis dolor adipiscing'
@@ -67,7 +64,7 @@ const Beneficiaries = () => {
 						<BeneCard image={Bene3} text='Sagittis quam nunc platea est' />
 						<BeneCard image={Bene4} text='Nisi, sed dui, ac enim' />
 						<BeneCard image={Bene5} text='Vitae sodales sit id ullamcorper' />
-					</Slider>
+					</Carousel>
 				</Container>
 			</section>
 		</Fragment>

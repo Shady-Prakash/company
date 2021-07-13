@@ -5,18 +5,7 @@
 	@include responsive-for(xs) {
 		padding: rem(32px) 0;
 	}
-	&-wrapper {
-		display: flex;
-		overflow-x: auto;
-		width: 1024px;
-		&::-webkit-scrollbar {
-			display: none;
-		}
-		& .newsCard__lg {
-			width: rem(256px);
-			margin-top: rem(16px);
-		}
-	}
+
 	&-slider {
 		width: calc(100% - 32px - 16px);
 		margin-left: auto;

@@ -12088,8 +12088,8 @@ header:after {
 }
 @media all and (max-width: 992px) {
   header:after {
-    width: calc(100% - 2rem);
-    left: 2rem;
+    width: calc(100% - 1rem);
+    left: 1rem;
   }
 }
 
@@ -12166,10 +12166,6 @@ header:after {
   width: calc(100% - 120px);
   margin: 5rem 0 0 auto;
 }
-.promo--img__mission {
-  background: url("../../assets/uploads/Image.jpg") no-repeat;
-  margin: 0 auto 0 0;
-}
 @media all and (max-width: 1680px) {
   .promo--img {
     width: calc(100% - 120px - 3.75rem);
@@ -12200,6 +12196,15 @@ header:after {
     width: calc(100% - 32px - 1rem);
     min-height: 12.25rem;
     margin: 2.5rem 0 0 auto;
+  }
+}
+.promo--img__mission {
+  background: url("../../assets/uploads/Image.jpg") no-repeat;
+  margin: 0 auto 0 0;
+}
+@media all and (max-width: 375px) {
+  .promo--img__mission {
+    width: calc(100% - 32px);
   }
 }
 
@@ -12286,8 +12291,8 @@ header:after {
 }
 @media all and (max-width: 992px) {
   .hero:after {
-    width: calc(100% - 2rem);
-    left: 2rem;
+    width: calc(100% - 1rem);
+    left: 1rem;
   }
 }
 @media all and (max-width: 375px) {
@@ -12305,18 +12310,6 @@ header:after {
     padding: 2rem 0;
   }
 }
-.latestNews-wrapper {
-  display: flex;
-  overflow-x: auto;
-  width: 1024px;
-}
-.latestNews-wrapper::-webkit-scrollbar {
-  display: none;
-}
-.latestNews-wrapper .newsCard__lg {
-  width: 16rem;
-  margin-top: 1rem;
-}
 .latestNews-slider {
   width: calc(100% - 32px - 16px);
   margin-left: auto;
@@ -12330,18 +12323,39 @@ header:after {
   position: relative;
   padding: 5rem 0 3.75rem;
 }
+@media all and (max-width: 375px) {
+  .mission {
+    padding: 2rem 0;
+  }
+}
 .mission__content {
   max-width: 48.75rem;
 }
 .mission__content h5, .mission__content .h5 {
   margin-bottom: 2rem;
 }
+@media all and (max-width: 375px) {
+  .mission__content h5, .mission__content .h5 {
+    margin-bottom: 1rem;
+  }
+}
 .mission__content h2, .mission__content .h2 {
   margin-bottom: 1.25rem;
+}
+@media all and (max-width: 375px) {
+  .mission__content h2, .mission__content .h2 {
+    margin-bottom: 0.5rem;
+  }
 }
 .mission__content p {
   margin-bottom: 5rem;
   max-width: 35.625rem;
+}
+@media all and (max-width: 375px) {
+  .mission__content p {
+    margin-bottom: 2.5rem;
+    max-width: unset;
+  }
 }
 .mission:after {
   position: absolute;
@@ -12353,28 +12367,30 @@ header:after {
   width: calc(100% - 60px);
   left: 0;
 }
+@media all and (max-width: 375px) {
+  .mission:after {
+    width: calc(100% - 16px);
+    height: calc(100% - 96px - 32px);
+  }
+}
 
 /** @format */
 .bene {
   background-color: #ffffff;
   padding: 5rem 0 6.625rem;
 }
-.bene h5, .bene .h5 {
-  margin-bottom: 3.75rem;
-}
-.bene__slider.container {
-  padding-right: 0;
-  margin-right: 0;
-  max-width: 1240px;
-}
-@media all and (max-width: 1680px) {
-  .bene__slider.container {
-    max-width: 1556px;
+@media all and (max-width: 375px) {
+  .bene {
+    padding: 1.5rem 0 4.25rem;
   }
 }
-@media all and (max-width: 1680px) {
-  .bene__slider.container {
-    max-width: 1108px;
+.bene h5, .bene .h5 {
+  margin-bottom: 3.75rem;
+  margin-bottom: 1rem;
+}
+@media all and (max-width: 375px) {
+  .bene .container {
+    max-width: 340px;
   }
 }
 
