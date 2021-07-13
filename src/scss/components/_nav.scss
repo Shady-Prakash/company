@@ -37,6 +37,7 @@ nav {
 		position: fixed;
 		padding: rem(35px);
 		overflow-y: scroll;
+		z-index: 9;
 		&__links {
 			color: color(white);
 			margin-top: rem(56px);
@@ -67,6 +68,7 @@ nav {
 			top: 30px;
 			right: 30px;
 			height: rem(18px);
+			z-index: 99;
 		}
 	}
 }

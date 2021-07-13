@@ -3,6 +3,9 @@
 .newsCard {
 	border: 1px solid color(white);
 	padding: rem(40px);
+	@include responsive-for(xs) {
+		padding: rem(16px);
+	}
 	&__body {
 		& .meta {
 			padding: rem(20px) 0 rem(16px);
@@ -10,6 +13,9 @@
 				height: rem(1px);
 				width: rem(32px);
 				background-color: color(gray, three);
+				@include responsive-for(xs) {
+					width: 1rem;
+				}
 			}
 		}
 	}
